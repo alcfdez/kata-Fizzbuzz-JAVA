@@ -1,19 +1,13 @@
 package com.fizzbuzz;
 
 public class FizzBuzz {
-    private Integer TestNumber = 0;
+    private Integer number;
 
-    public FizzBuzz(Integer testNumber) {
-        this.TestNumber = testNumber;
+    public FizzBuzz(Integer number) {
+        this.number = number;
     }
 
-    public Integer getTestNumber() {
-        return TestNumber;
-    }
-
-    public void setTestNumber(Integer testNumber) {
-        this.TestNumber = testNumber;
-    }
+   
     
     public String TestFizzBuzz(Integer numberToTest){
         if(numberToTest % 3 == 0 && numberToTest % 5 == 0) return "FizzBuzz";
@@ -31,5 +25,17 @@ public class FizzBuzz {
         if(numberCast.contains("5")) return "five";
 
         return numberCast;
+    }
+
+
+
+    public Integer getNumber() {
+        return number;
+    }
+
+
+
+    public void setNumber(Integer number) {
+        this.number = number;
     }
 }
