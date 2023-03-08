@@ -15,6 +15,8 @@ public class FizzBuzz {
         this.number = number;
     }
 
+ 
+    
     public static void main (String[] args){
         int numb;
         System.out.println("Serie de números");
@@ -25,15 +27,29 @@ public class FizzBuzz {
             System.out.println(numb +",");
         }
 
-    public String fizz () {
+    public String fizz (){
         if(this.number % 3 == 0) {
             return "fizz";
         } 
         return String.valueOf(this.number);
 
 
-    public 
     }
+    
+    public String buzz(){
+        if(this.number % 5 == ){
+            return "buzz";
+        }
+        return String.valueOf(this.number);
+    }
+
+    public String fizzbuzz(){
+        if(this.number % 5 == 0 && this.number % 3 == 0 ){
+            return "fizzbuzz";
+        }
+        return String.valueOf(this.number);
+   }
+
 
 
 
